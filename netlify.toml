@@ -1,15 +1,9 @@
 [build]
-  publish = "."
-  functions = "netlify/functions"
-
-[[redirects]]
-  from = "/api/state"
-  to = "/.netlify/functions/state"
-  status = 200
-  force = true
+publish = "."
+functions = "netlify/functions"
 
 [[headers]]
-  for = "/*"
-  [headers.values]
-    X-Frame-Options = "SAMEORIGIN"
-    Referrer-Policy = "no-referrer"
+for = "/*"
+[headers.values]
+X-Frame-Options = "SAMEORIGIN"
+Referrer-Policy = "no-referrer"
