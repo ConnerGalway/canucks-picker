@@ -1,0 +1,1250 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Canucks Ticket Draft</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ctext y='26' font-size='26'%3E%F0%9F%8F%92%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Saira+Condensed:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<style>
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0}
+button,input,select{font:inherit;color:inherit}
+:root{
+  --ground:#EEF2F6; --panel:#FFFFFF; --panel-2:#E5EBF1; --panel-3:#F6F9FB;
+  --ink:#0A1B2D; --ink-2:#44586D; --ink-3:#78899B;
+  --rule:#DCE3EA; --rule-2:#C3CFDA;
+  --navy:#00205B; --navy-ink:#FFFFFF; --navy-soft:rgba(0,32,91,.08);
+  --green:#00843D; --green-ink:#FFFFFF; --green-soft:rgba(0,132,61,.10);
+  --red:#C8102E; --red-soft:rgba(200,16,46,.10);
+  --amber:#9A6300; --amber-soft:rgba(154,99,0,.12);
+  --shadow-1:0 1px 2px rgba(10,27,45,.07);
+  --shadow-2:0 2px 4px rgba(10,27,45,.06),0 12px 28px -14px rgba(10,27,45,.24);
+  --r:10px;
+  --dsp:"Saira Condensed","Arial Narrow",Arial,sans-serif;
+  --ui:Archivo,"Helvetica Neue",Arial,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --ground:#04121D; --panel:#0B2032; --panel-2:#152F44; --panel-3:#0F2739;
+    --ink:#E6EEF6; --ink-2:#A7BACD; --ink-3:#7B90A5;
+    --rule:#1C3549; --rule-2:#2A4560;
+    --navy:#1B4C9B; --navy-ink:#FFFFFF; --navy-soft:rgba(66,133,222,.16);
+    --green:#2FB56B; --green-ink:#04120A; --green-soft:rgba(47,181,107,.16);
+    --red:#FF6B82; --red-soft:rgba(255,107,130,.15);
+    --amber:#E0A33A; --amber-soft:rgba(224,163,58,.16);
+    --shadow-1:0 1px 2px rgba(0,0,0,.45);
+    --shadow-2:0 2px 4px rgba(0,0,0,.4),0 14px 32px -16px rgba(0,0,0,.8);
+  }
+}
+:root[data-theme="dark"]{
+  --ground:#04121D; --panel:#0B2032; --panel-2:#152F44; --panel-3:#0F2739;
+  --ink:#E6EEF6; --ink-2:#A7BACD; --ink-3:#7B90A5;
+  --rule:#1C3549; --rule-2:#2A4560;
+  --navy:#1B4C9B; --navy-ink:#FFFFFF; --navy-soft:rgba(66,133,222,.16);
+  --green:#2FB56B; --green-ink:#04120A; --green-soft:rgba(47,181,107,.16);
+  --red:#FF6B82; --red-soft:rgba(255,107,130,.15);
+  --amber:#E0A33A; --amber-soft:rgba(224,163,58,.16);
+  --shadow-1:0 1px 2px rgba(0,0,0,.45);
+  --shadow-2:0 2px 4px rgba(0,0,0,.4),0 14px 32px -16px rgba(0,0,0,.8);
+}
+
+body{
+  background:var(--ground); color:var(--ink);
+  font-family:var(--ui); font-size:15px; line-height:1.55;
+  -webkit-font-smoothing:antialiased;
+}
+h1,h2,h3,h4{margin:0;font-family:var(--dsp);font-weight:600;letter-spacing:.005em;text-wrap:balance}
+h1{font-size:1.45rem;text-transform:uppercase;letter-spacing:.045em}
+h2{font-size:1.5rem;text-transform:uppercase;letter-spacing:.035em}
+h3{font-size:1.1rem;text-transform:uppercase;letter-spacing:.04em}
+p{margin:0 0 .8rem}
+p:last-child{margin-bottom:0}
+.num{font-family:var(--mono);font-variant-numeric:tabular-nums}
+.eyebrow{font-family:var(--dsp);font-size:.8rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-3)}
+.muted{color:var(--ink-2)}
+.small{font-size:.83rem}
+.tiny{font-size:.76rem}
+a{color:var(--green)}
+:focus-visible{outline:2px solid var(--green);outline-offset:2px;border-radius:4px}
+
+/* ---------- app frame ---------- */
+.top{
+  position:sticky;top:0;z-index:40;background:var(--navy);color:#fff;
+  border-bottom:3px solid var(--green);
+}
+.top-in{max-width:1200px;margin:0 auto;padding:.6rem 18px;display:flex;align-items:center;gap:.9rem;flex-wrap:wrap}
+.mark{display:flex;align-items:center;gap:.6rem;min-width:0}
+.mark svg{flex:none;display:block}
+.mark-t{font-family:var(--dsp);font-size:1.06rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;line-height:1.05}
+.mark-s{font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.62);font-family:var(--dsp);font-weight:600}
+.top-sp{flex:1 1 auto}
+.phase-pill{
+  display:flex;align-items:center;gap:.45rem;background:rgba(255,255,255,.13);
+  border-radius:999px;padding:.24rem .75rem .24rem .55rem;font-size:.78rem;font-weight:600;
+}
+.phase-dot{width:8px;height:8px;border-radius:50%;background:var(--green);flex:none}
+.phase-pill.done .phase-dot{background:#fff}
+.who{
+  display:flex;align-items:center;gap:.5rem;background:rgba(255,255,255,.13);border:0;
+  color:#fff;border-radius:999px;padding:.26rem .5rem .26rem .7rem;font-size:.78rem;font-weight:600;cursor:pointer;
+}
+.who:hover{background:rgba(255,255,255,.22)}
+.who svg{opacity:.7}
+
+main{max-width:1200px;margin:0 auto;padding:26px 18px 90px}
+.narrow{max-width:660px}
+
+/* ---------- generic ---------- */
+.card{background:var(--panel);border:1px solid var(--rule-2);border-radius:var(--r);box-shadow:var(--shadow-1)}
+.card-h{padding:.95rem 1.1rem;border-bottom:1px solid var(--rule);display:flex;align-items:center;gap:.7rem;flex-wrap:wrap}
+.card-h h3{font-size:.95rem}
+.card-b{padding:1.1rem}
+.stack{display:flex;flex-direction:column;gap:18px}
+.row{display:flex;align-items:center;gap:.6rem;flex-wrap:wrap}
+.grow{flex:1 1 auto}
+
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:.45rem;
+  background:var(--panel-2);color:var(--ink);border:1px solid var(--rule-2);
+  border-radius:8px;padding:.5rem .9rem;font-size:.87rem;font-weight:600;
+  cursor:pointer;transition:background .13s ease,border-color .13s ease,transform .08s ease;
+  white-space:nowrap;
+}
+.btn:hover{background:var(--rule);border-color:var(--ink-3)}
+.btn:active{transform:translateY(1px)}
+.btn:disabled{opacity:.42;cursor:not-allowed;transform:none}
+.btn-p{background:var(--green);border-color:var(--green);color:var(--green-ink)}
+.btn-p:hover{background:var(--green);border-color:var(--green);filter:brightness(1.08)}
+.btn-n{background:var(--navy);border-color:var(--navy);color:var(--navy-ink)}
+.btn-n:hover{background:var(--navy);border-color:var(--navy);filter:brightness(1.14)}
+.btn-d{background:transparent;border-color:var(--red);color:var(--red)}
+.btn-d:hover{background:var(--red-soft);border-color:var(--red)}
+.btn-s{padding:.32rem .6rem;font-size:.78rem;border-radius:6px}
+.btn-lg{padding:.72rem 1.35rem;font-size:.95rem}
+
+.field{display:flex;flex-direction:column;gap:.3rem}
+.field label{font-size:.76rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-3)}
+input[type=text],input[type=number],input[type=password],select{
+  background:var(--panel-3);border:1px solid var(--rule-2);border-radius:7px;
+  padding:.45rem .6rem;font-size:.88rem;width:100%;
+}
+input[type=number]{font-family:var(--mono);font-variant-numeric:tabular-nums}
+input::placeholder{color:var(--ink-3)}
+
+.tier{display:inline-flex;align-items:center;gap:.34rem;font-size:.7rem;font-weight:600;color:var(--ink-2);white-space:nowrap;letter-spacing:.02em}
+.tier i{width:8px;height:8px;border-radius:50%;flex:none}
+.badge{display:inline-flex;align-items:center;gap:.32rem;font-size:.7rem;font-weight:700;letter-spacing:.07em;text-transform:uppercase;border-radius:5px;padding:.12rem .42rem}
+.badge.wk{background:var(--navy-soft);color:var(--navy)}
+.badge.prot{background:var(--red-soft);color:var(--red)}
+
+.note{border-left:3px solid var(--navy);background:var(--navy-soft);padding:.75rem .95rem;border-radius:0 8px 8px 0;font-size:.87rem}
+.note.warn{border-left-color:var(--amber);background:var(--amber-soft)}
+.note.good{border-left-color:var(--green);background:var(--green-soft)}
+
+table{border-collapse:collapse;width:100%;font-size:.87rem}
+th{text-align:left;font-size:.68rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3);padding:0 .8rem .45rem 0;border-bottom:1px solid var(--rule-2);white-space:nowrap}
+td{padding:.44rem .8rem .44rem 0;border-bottom:1px solid var(--rule)}
+th.r,td.r{text-align:right;padding-right:0;font-variant-numeric:tabular-nums}
+tr:last-child td{border-bottom:none}
+tbody.tot td{border-top:1px solid var(--rule-2);border-bottom:none;font-weight:700;padding-top:.55rem}
+.tbl-x{overflow-x:auto}
+
+/* ---------- gate / role ---------- */
+.gate{min-height:62vh;display:flex;align-items:center;justify-content:center;padding:20px 0}
+.gate-in{max-width:560px;width:100%;text-align:center}
+.roles{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:1.6rem}
+@media(max-width:520px){.roles{grid-template-columns:1fr}}
+.role{
+  background:var(--panel);border:1.5px solid var(--rule-2);border-radius:12px;padding:1.4rem 1.1rem;
+  cursor:pointer;text-align:left;transition:border-color .14s,box-shadow .14s,transform .1s;
+}
+.role:hover{border-color:var(--green);box-shadow:var(--shadow-2);transform:translateY(-2px)}
+.role-n{font-family:var(--dsp);font-size:1.4rem;font-weight:700;text-transform:uppercase;letter-spacing:.045em;line-height:1.1}
+.role-d{font-size:.83rem;color:var(--ink-2);margin-top:.35rem}
+.role-s{font-size:.72rem;font-weight:700;letter-spacing:.09em;text-transform:uppercase;margin-top:.75rem;display:inline-block;padding:.14rem .45rem;border-radius:5px}
+.role-s.ok{background:var(--green-soft);color:var(--green)}
+.role-s.wait{background:var(--amber-soft);color:var(--amber)}
+
+/* ---------- ballot ---------- */
+.ballot{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:18px;align-items:start}
+@media(max-width:900px){.ballot{grid-template-columns:1fr}.ballot .card{max-height:none}}
+.pane-h{
+  position:sticky;top:53px;z-index:10;background:var(--panel);
+  padding:.85rem 1.05rem;border-bottom:1px solid var(--rule);border-radius:var(--r) var(--r) 0 0;
+}
+.pane-t{display:flex;align-items:baseline;gap:.55rem;flex-wrap:wrap}
+.pane-t h3{font-size:.98rem}
+.count{font-family:var(--mono);font-size:.8rem;color:var(--ink-3);font-variant-numeric:tabular-nums}
+.filters{display:flex;gap:.35rem;flex-wrap:wrap;margin-top:.65rem}
+.chipf{
+  background:var(--panel-3);border:1px solid var(--rule-2);border-radius:999px;
+  padding:.2rem .62rem;font-size:.75rem;font-weight:600;cursor:pointer;color:var(--ink-2);
+}
+.chipf:hover{border-color:var(--ink-3)}
+.chipf[aria-pressed="true"]{background:var(--navy);border-color:var(--navy);color:#fff}
+.list{list-style:none;margin:0;padding:.3rem 0;max-height:min(64vh,720px);overflow-y:auto;overscroll-behavior:contain}
+.list:empty::after{content:attr(data-empty);display:block;padding:2rem 1.1rem;text-align:center;color:var(--ink-3);font-size:.86rem}
+.gi{
+  display:grid;grid-template-columns:1.1rem 1.9rem 2.3rem 3.5rem minmax(0,1fr) auto 5.3rem auto;
+  gap:.5rem;align-items:center;padding:.42rem 1.05rem;font-size:.88rem;
+  border-bottom:1px solid var(--rule);
+}
+.gi:last-child{border-bottom:none}
+.gi.pool{cursor:pointer}
+.gi.pool:hover{background:var(--green-soft)}
+.gi.wkend{background:var(--navy-soft)}
+.gi.wkend:hover{background:var(--green-soft)}
+.gi.drag{opacity:.35}
+.gi.over{box-shadow:inset 0 2px 0 var(--green)}
+.gi.top20{border-left:3px solid var(--green);padding-left:calc(1.05rem - 3px)}
+.rk{font-family:var(--mono);font-size:.78rem;font-weight:600;color:var(--ink-3);width:1.9rem;text-align:right;font-variant-numeric:tabular-nums}
+.gi.top20 .rk{color:var(--green)}
+.dow{font-size:.68rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-3)}
+.dt{font-family:var(--mono);font-size:.78rem;font-weight:500;color:var(--ink-2);white-space:nowrap}
+.opp{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-weight:500}
+.gi-act{display:flex;gap:.15rem}
+.ib{
+  background:transparent;border:1px solid transparent;border-radius:5px;width:22px;height:22px;
+  display:flex;align-items:center;justify-content:center;cursor:pointer;color:var(--ink-3);padding:0;
+}
+.ib:hover{background:var(--panel-2);color:var(--ink);border-color:var(--rule-2)}
+.ib:disabled{opacity:.25;cursor:not-allowed}
+.handle{cursor:grab;color:var(--ink-3);display:flex;align-items:center}
+.handle:active{cursor:grabbing}
+
+.prog{height:5px;background:var(--panel-2);border-radius:3px;overflow:hidden;margin-top:.7rem}
+.prog i{display:block;height:100%;background:var(--green);border-radius:3px;transition:width .25s ease}
+
+.presets{display:flex;gap:.4rem;flex-wrap:wrap;margin-top:.6rem}
+
+/* ---------- cost calculator ---------- */
+.calc{border:1px solid var(--rule-2);border-radius:var(--r);background:var(--panel);box-shadow:var(--shadow-1);overflow:hidden}
+.calc-h{background:var(--navy);color:#fff;padding:.75rem 1.05rem;display:flex;align-items:center;gap:.6rem;flex-wrap:wrap}
+.calc-h h3{color:#fff;font-size:.92rem}
+.calc-b{padding:1.05rem}
+.big{
+  font-family:var(--mono);font-size:2.1rem;font-weight:600;line-height:1;letter-spacing:-.02em;
+  font-variant-numeric:tabular-nums;
+}
+.big.pos{color:var(--red)}
+.big.neg{color:var(--green)}
+.big.zero{color:var(--ink-2)}
+.calc-lead{display:flex;align-items:flex-end;gap:.9rem;flex-wrap:wrap;margin-bottom:.9rem}
+.calc-lead .lbl{font-size:.78rem;color:var(--ink-3);font-weight:600;letter-spacing:.05em;text-transform:uppercase}
+.sums{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:1px;background:var(--rule-2);border:1px solid var(--rule-2);border-radius:8px;overflow:hidden;margin-bottom:1rem}
+.sum{background:var(--panel-3);padding:.6rem .75rem}
+.sum b{display:block;font-family:var(--mono);font-size:1.02rem;font-weight:600;font-variant-numeric:tabular-nums}
+.sum span{display:block;font-size:.72rem;color:var(--ink-3);margin-top:.1rem}
+
+/* ---------- schedule ---------- */
+.cols2{display:grid;grid-template-columns:repeat(auto-fit,minmax(330px,1fr));gap:18px;align-items:start}
+.owner-h{padding:.9rem 1.1rem;border-bottom:1px solid var(--rule);display:flex;align-items:center;gap:.6rem;flex-wrap:wrap}
+.owner-h.takt{background:var(--green-soft);border-bottom-color:var(--green)}
+.owner-h.conner{background:var(--navy-soft);border-bottom-color:var(--navy)}
+.mon{
+  font-family:var(--dsp);font-size:.72rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--ink-3);padding:.7rem 1.05rem .25rem;background:var(--panel-3);border-bottom:1px solid var(--rule);
+}
+.sw{display:flex;gap:.3rem;background:var(--panel-2);padding:3px;border-radius:8px}
+.sw button{background:transparent;border:0;border-radius:6px;padding:.32rem .7rem;font-size:.8rem;font-weight:600;cursor:pointer;color:var(--ink-2)}
+.sw button[aria-pressed="true"]{background:var(--panel);color:var(--ink);box-shadow:var(--shadow-1)}
+
+/* ---------- toast / modal ---------- */
+.toast{
+  position:fixed;left:50%;bottom:24px;transform:translateX(-50%);z-index:90;
+  background:var(--navy);color:#fff;padding:.7rem 1.1rem;border-radius:8px;
+  box-shadow:var(--shadow-2);font-size:.87rem;font-weight:600;max-width:90vw;text-align:center;
+}
+.toast.err{background:var(--red);color:#fff}
+.toast.ok{background:var(--green);color:var(--green-ink)}
+.scrim{position:fixed;inset:0;background:rgba(4,18,29,.55);z-index:80;display:flex;align-items:center;justify-content:center;padding:20px}
+.modal{background:var(--panel);border-radius:12px;box-shadow:var(--shadow-2);max-width:460px;width:100%;padding:1.4rem}
+.modal h3{margin-bottom:.5rem}
+
+.steps{display:flex;gap:.4rem;flex-wrap:wrap;list-style:none;margin:0;padding:0}
+.steps li{display:flex;align-items:center;gap:.4rem;font-size:.78rem;font-weight:600;color:var(--ink-3)}
+.steps li.on{color:var(--ink)}
+.steps li.ok{color:var(--green)}
+.steps li::after{content:"";width:14px;height:1px;background:var(--rule-2);margin-left:.2rem}
+.steps li:last-child::after{display:none}
+
+footer{max-width:1200px;margin:0 auto;padding:0 18px 60px;font-size:.76rem;color:var(--ink-3)}
+
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+@media(max-width:620px){
+  .gi{grid-template-columns:1.1rem 1.9rem 2.3rem 3.4rem minmax(0,1fr) auto;row-gap:.15rem}
+  .gi .tier{grid-column:3 / 6}
+  .gi .gi-act{grid-column:6 / -1;justify-self:end}
+  h2{font-size:1.25rem}
+}
+
+.calc details{margin-top:.2rem}
+.calc summary{cursor:pointer;font-size:.8rem;font-weight:600;color:var(--ink-2);padding:.35rem 0;list-style:none}
+.calc summary::-webkit-details-marker{display:none}
+.calc summary::before{content:"▸ ";color:var(--ink-3)}
+.calc details[open] summary::before{content:"▾ "}
+
+.chk{display:flex;align-items:center;gap:.5rem;font-size:.85rem;cursor:pointer}
+.chk input{width:16px;height:16px;accent-color:var(--green);flex:none;cursor:pointer}
+.protgrid{
+  display:grid;grid-template-columns:repeat(auto-fill,minmax(215px,1fr));gap:.25rem .9rem;
+  max-height:232px;overflow-y:auto;padding:.6rem .7rem;
+  border:1px solid var(--rule-2);border-radius:8px;background:var(--panel-3);
+}
+.protgrid .chk{font-size:.78rem}
+.protgrid .chk input{width:14px;height:14px}
+.badge.res{background:var(--amber-soft);color:var(--amber)}
+
+/* ---------- print / save as PDF ---------- */
+@media print{
+  @page{margin:14mm 12mm}
+  :root{
+    --ground:#fff;--panel:#fff;--panel-2:#fff;--panel-3:#fff;
+    --ink:#000;--ink-2:#333;--ink-3:#555;--rule:#ccc;--rule-2:#999;
+    --navy:#00205B;--green:#00843D;
+  }
+  body{background:#fff;font-size:10.5pt}
+  .top{position:static;background:#fff;color:var(--navy);border-bottom:2px solid var(--navy)}
+  .mark-t{color:var(--navy)}.mark-s{color:#555}
+  .mark svg rect,.mark svg line,.mark svg circle{stroke:#00205B}
+  .phase-pill,.who,.steps,.sw,.toast,.scrim,.presets,.filters,.prog{display:none!important}
+  .btn,.chipf,.ib,.handle,.gi-act{display:none!important}
+  main{padding:0;max-width:none}
+  .card,.calc,.col{box-shadow:none;border:1px solid #bbb}
+  .cols2{display:block}
+  .cols2 > .card{margin-bottom:8mm;break-inside:auto}
+  .owner-h{break-after:avoid;break-inside:avoid}
+  .mon{break-after:avoid;break-inside:avoid}
+  .calc,.calc-b,.sums,.note{break-inside:avoid}
+  .list{max-height:none!important;overflow:visible!important}
+  li.g,.gi{break-inside:avoid;padding-left:.5rem;padding-right:.5rem}
+  .gi.wkend,li.g.wknd{background:#f4f4f4!important}
+  .owner-h.takt{background:#eef7f1!important}
+  .owner-h.conner{background:#eef1f7!important}
+  .calc-h{background:#fff;color:var(--navy);border-bottom:1px solid #bbb}
+  .calc-h h3{color:var(--navy)}
+  .note{background:#f6f6f6!important}
+  .badge.res{display:none!important}
+  footer{border-top:1px solid #bbb;color:#666}
+  a[href]:after{content:""}
+}
+
+</style>
+</head>
+<body>
+<div id="root"></div>
+<script>
+var GAMES=[{"id":1,"d":"2026-10-01","dow":"Thu","t":"7:00 PM","o":"Edmonton Oilers","tier":"Marquee","tr":5,"wk":false,"utc":"20261002T020000Z"},{"id":2,"d":"2026-10-03","dow":"Sat","t":"7:00 PM","o":"Calgary Flames","tier":"Regular+","tr":2,"wk":true,"utc":"20261004T020000Z"},{"id":3,"d":"2026-10-04","dow":"Sun","t":"6:00 PM","o":"Vegas Golden Knights","tier":"Regular","tr":1,"wk":true,"utc":"20261005T010000Z"},{"id":4,"d":"2026-10-20","dow":"Tue","t":"7:00 PM","o":"Carolina Hurricanes","tier":"Regular","tr":1,"wk":false,"utc":"20261021T020000Z"},{"id":5,"d":"2026-10-22","dow":"Thu","t":"7:00 PM","o":"Detroit Red Wings","tier":"Regular","tr":1,"wk":false,"utc":"20261023T020000Z"},{"id":6,"d":"2026-10-25","dow":"Sun","t":"7:00 PM","o":"Minnesota Wild","tier":"Premium+","tr":4,"wk":true,"utc":"20261026T020000Z"},{"id":7,"d":"2026-10-31","dow":"Sat","t":"4:00 PM","o":"Toronto Maple Leafs","tier":"Marquee+","tr":6,"wk":true,"utc":"20261031T230000Z"},{"id":8,"d":"2026-11-03","dow":"Tue","t":"6:00 PM","o":"Anaheim Ducks","tier":"Regular","tr":1,"wk":false,"utc":"20261104T020000Z"},{"id":9,"d":"2026-11-09","dow":"Mon","t":"6:30 PM","o":"Philadelphia Flyers","tier":"Regular","tr":1,"wk":false,"utc":"20261110T023000Z"},{"id":10,"d":"2026-11-13","dow":"Fri","t":"6:00 PM","o":"New York Rangers","tier":"Regular+","tr":2,"wk":true,"utc":"20261114T020000Z"},{"id":11,"d":"2026-11-21","dow":"Sat","t":"7:00 PM","o":"Minnesota Wild","tier":"Premium","tr":3,"wk":true,"utc":"20261122T030000Z"},{"id":12,"d":"2026-11-22","dow":"Sun","t":"5:00 PM","o":"Chicago Blackhawks","tier":"Regular","tr":1,"wk":true,"utc":"20261123T010000Z"},{"id":13,"d":"2026-12-04","dow":"Fri","t":"6:00 PM","o":"Buffalo Sabres","tier":"Regular","tr":1,"wk":true,"utc":"20261205T020000Z"},{"id":14,"d":"2026-12-05","dow":"Sat","t":"7:00 PM","o":"Dallas Stars","tier":"Regular+","tr":2,"wk":true,"utc":"20261206T030000Z"},{"id":15,"d":"2026-12-07","dow":"Mon","t":"6:00 PM","o":"Washington Capitals","tier":"Premium","tr":3,"wk":false,"utc":"20261208T020000Z"},{"id":16,"d":"2026-12-10","dow":"Thu","t":"6:00 PM","o":"Nashville Predators","tier":"Regular","tr":1,"wk":false,"utc":"20261211T020000Z"},{"id":17,"d":"2026-12-19","dow":"Sat","t":"7:00 PM","o":"San Jose Sharks","tier":"Premium+","tr":4,"wk":true,"utc":"20261220T030000Z"},{"id":18,"d":"2026-12-21","dow":"Mon","t":"6:00 PM","o":"Utah Mammoth","tier":"Premium","tr":3,"wk":false,"utc":"20261222T020000Z"},{"id":19,"d":"2026-12-28","dow":"Mon","t":"6:30 PM","o":"Los Angeles Kings","tier":"Premium","tr":3,"wk":false,"utc":"20261229T023000Z"},{"id":20,"d":"2026-12-30","dow":"Wed","t":"6:30 PM","o":"Seattle Kraken","tier":"Premium","tr":3,"wk":false,"utc":"20261231T023000Z"},{"id":21,"d":"2027-01-05","dow":"Tue","t":"6:00 PM","o":"New York Islanders","tier":"Regular","tr":1,"wk":false,"utc":"20270106T020000Z"},{"id":22,"d":"2027-01-07","dow":"Thu","t":"6:00 PM","o":"Tampa Bay Lightning","tier":"Regular","tr":1,"wk":false,"utc":"20270108T020000Z"},{"id":23,"d":"2027-01-09","dow":"Sat","t":"7:00 PM","o":"Florida Panthers","tier":"Premium","tr":3,"wk":true,"utc":"20270110T030000Z"},{"id":24,"d":"2027-01-14","dow":"Thu","t":"6:00 PM","o":"Seattle Kraken","tier":"Regular","tr":1,"wk":false,"utc":"20270115T020000Z"},{"id":25,"d":"2027-01-16","dow":"Sat","t":"7:00 PM","o":"Columbus Blue Jackets","tier":"Regular+","tr":2,"wk":true,"utc":"20270117T030000Z"},{"id":26,"d":"2027-02-01","dow":"Mon","t":"5:30 PM","o":"Montreal Canadiens","tier":"Premium+","tr":4,"wk":false,"utc":"20270202T013000Z"},{"id":27,"d":"2027-02-03","dow":"Wed","t":"6:00 PM","o":"New Jersey Devils","tier":"Regular","tr":1,"wk":false,"utc":"20270204T020000Z"},{"id":28,"d":"2027-02-13","dow":"Sat","t":"7:00 PM","o":"Winnipeg Jets","tier":"Premium","tr":3,"wk":true,"utc":"20270214T030000Z"},{"id":29,"d":"2027-02-16","dow":"Tue","t":"6:00 PM","o":"Pittsburgh Penguins","tier":"Premium","tr":3,"wk":false,"utc":"20270217T020000Z"},{"id":30,"d":"2027-02-18","dow":"Thu","t":"6:00 PM","o":"Ottawa Senators","tier":"Regular","tr":1,"wk":false,"utc":"20270219T020000Z"},{"id":31,"d":"2027-02-20","dow":"Sat","t":"7:00 PM","o":"Colorado Avalanche","tier":"Regular+","tr":2,"wk":true,"utc":"20270221T030000Z"},{"id":32,"d":"2027-02-21","dow":"Sun","t":"5:00 PM","o":"Boston Bruins","tier":"Premium","tr":3,"wk":true,"utc":"20270222T010000Z"},{"id":33,"d":"2027-02-27","dow":"Sat","t":"7:00 PM","o":"Calgary Flames","tier":"Regular+","tr":2,"wk":true,"utc":"20270228T030000Z"},{"id":34,"d":"2027-03-03","dow":"Wed","t":"7:00 PM","o":"Chicago Blackhawks","tier":"Regular+","tr":2,"wk":false,"utc":"20270304T030000Z"},{"id":35,"d":"2027-03-17","dow":"Wed","t":"7:00 PM","o":"Nashville Predators","tier":"Regular","tr":1,"wk":false,"utc":"20270318T020000Z"},{"id":36,"d":"2027-03-20","dow":"Sat","t":"7:00 PM","o":"St. Louis Blues","tier":"Regular+","tr":2,"wk":true,"utc":"20270321T020000Z"},{"id":37,"d":"2027-03-21","dow":"Sun","t":"6:00 PM","o":"Edmonton Oilers","tier":"Marquee","tr":5,"wk":true,"utc":"20270322T010000Z"},{"id":38,"d":"2027-03-23","dow":"Tue","t":"7:00 PM","o":"Los Angeles Kings","tier":"Regular","tr":1,"wk":false,"utc":"20270324T020000Z"},{"id":39,"d":"2027-03-25","dow":"Thu","t":"7:00 PM","o":"Vegas Golden Knights","tier":"Regular+","tr":2,"wk":false,"utc":"20270326T020000Z"},{"id":40,"d":"2027-03-27","dow":"Sat","t":"1:00 PM","o":"Anaheim Ducks","tier":"Regular+","tr":2,"wk":true,"utc":"20270327T200000Z"},{"id":41,"d":"2027-04-03","dow":"Sat","t":"7:00 PM","o":"San Jose Sharks","tier":"Premium+","tr":4,"wk":true,"utc":"20270404T020000Z"},{"id":42,"d":"2027-04-06","dow":"Tue","t":"7:00 PM","o":"Colorado Avalanche","tier":"Regular+","tr":2,"wk":false,"utc":"20270407T020000Z"}];
+/* ===== Canucks Ticket Draft — application ===== */
+(function () {
+"use strict";
+
+var TIERS = ["Marquee+","Marquee","Premium+","Premium","Regular+","Regular"];
+var DOT = {"Marquee+":"#C8102E","Marquee":"#E06A83","Premium+":"#3D74C4","Premium":"#6E9BD1","Regular+":"#79C3DE","Regular":"#94A6B5"};
+var QUOTA = {"Regular":8,"Regular+":7,"Premium":3,"Premium+":2,"Marquee":0,"Marquee+":0};
+var RATIO = {"Regular":1,"Regular+":1.375,"Premium":1.6559,"Premium+":2.0311,"Marquee":2.6582,"Marquee+":3.0314};
+function seasonValue() {
+  var c = tierCounts(), v = 0;
+  TIERS.forEach(function (t) { v += c[t] * face(t); });
+  return v * (S.priceBasis === "game" ? 1 : (S.seats || 1));
+}
+function tierCounts() { var c = {}; TIERS.forEach(function (t) { c[t] = 0; }); GAMES.forEach(function (g) { c[g.tier]++; }); return c; }
+function spreadSeasonTotal(total) {
+  var c = tierCounts(), denom = 0, out = {};
+  TIERS.forEach(function (t) { denom += c[t] * RATIO[t]; });
+  if (!denom) return null;
+  var unit = total / denom;
+  TIERS.forEach(function (t) { out[t] = Math.round(unit * RATIO[t] * 100) / 100; });
+  return out;
+}
+var MONTHS = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+var TAKT = "TAKT", OWNER = "Conner";
+
+var G = {}; GAMES.forEach(function (g) { G[g.id] = g; });
+
+/* ---------- state ---------- */
+var S = null;                       // filled by boot() from /api/state
+var root = document.getElementById("root");
+var creds = { role: null, code: null };
+try { creds.role = localStorage.getItem("ctd.role"); creds.code = localStorage.getItem("ctd.code"); } catch (e) {}
+
+var ui = {
+  role: null,           // "takt" | "conner"
+  authed: false,
+  filter: "all",
+  tab: "rank",
+  busy: false,
+  readonly: false,
+  showBallots: false,
+  preview: null         // owner's working allocation during review
+};
+
+ui.stage = "loading";               // loading | gate | app | fatal
+ui.pendingRole = null;
+ui.authError = "";
+ui.fatal = "";
+
+var draft = null;       // working ballot for the current role
+
+/* ---------- small helpers ---------- */
+function el(id) { return document.getElementById(id); }
+function esc(s) { return String(s).replace(/[&<>"']/g, function (c) { return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]; }); }
+function money(n) { return (n < 0 ? "−$" : "$") + Math.abs(n).toLocaleString("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 }); }
+function signed(n) { if (Math.abs(n) < 0.005) return "$0.00"; return (n > 0 ? "+$" : "−$") + Math.abs(n).toLocaleString("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 }); }
+function dparts(iso) { var p = iso.split("-"); return { y: +p[0], m: +p[1], d: +p[2] }; }
+function fmtDate(iso) { var p = dparts(iso); return MONTHS[p.m - 1].slice(0, 3) + " " + p.d; }
+function monthKey(iso) { var p = dparts(iso); return MONTHS[p.m - 1] + " " + p.y; }
+function byDate(a, b) { return G[a].d < G[b].d ? -1 : G[a].d > G[b].d ? 1 : 0; }
+function tierChip(t) { return '<span class="tier"><i style="background:' + DOT[t] + '"></i>' + t + "</span>"; }
+function face(t) { return (S.face && S.face[t]) || 0; }
+
+function toast(msg, kind) {
+  var old = document.querySelector(".toast"); if (old) old.remove();
+  var n = document.createElement("div");
+  n.className = "toast" + (kind ? " " + kind : "");
+  n.setAttribute("role", "status");
+  n.textContent = msg;
+  document.body.appendChild(n);
+  setTimeout(function () { if (n.parentNode) n.remove(); }, 4200);
+}
+
+/* ---------- draft ballot persistence (per-viewer, survives reloads) ---------- */
+function draftKey() { return "ctd.draft." + ui.role; }
+function loadDraft() {
+  var submitted = ui.role && S.ballots[ui.role];
+  if (submitted) return submitted.order.slice();
+  try {
+    var raw = localStorage.getItem(draftKey());
+    if (raw) {
+      var arr = JSON.parse(raw).filter(function (id) { return G[id] && !isDisclosed(id); });
+      return dedupe(arr);
+    }
+  } catch (e) {}
+  return [];
+}
+function saveDraft() { try { localStorage.setItem(draftKey(), JSON.stringify(draft)); } catch (e) {} }
+function dedupe(a) { var seen = {}, out = []; a.forEach(function (x) { if (!seen[x]) { seen[x] = 1; out.push(x); } }); return out; }
+function isProtected(id) { return (S.protectedIds || []).indexOf(id) !== -1; }
+function isDisclosed(id) { return (S.disclosedIds || []).indexOf(id) !== -1; }
+/* Ballots show every game except the openly-held one. */
+function poolIds() { return GAMES.map(function (g) { return g.id; }).filter(function (id) { return !isDisclosed(id); }); }
+/* Only these are actually allocated; the rest are retained. */
+function draftPool() { return GAMES.map(function (g) { return g.id; }).filter(function (id) { return !isProtected(id); }); }
+
+/* ---------- pick order ---------- */
+function pickOrder(nA, nB, firstA) {
+  var order = [], a = 0, b = 0;
+  while (a < nA || b < nB) {
+    var take;
+    if (!order.length) take = firstA ? "A" : "B";
+    else if (a >= nA) take = "B";
+    else if (b >= nB) take = "A";
+    else take = ((a + 0.5) / nA) < ((b + 0.5) / nB) ? "A" : "B";
+    if (take === "A") a++; else b++;
+    order.push(take);
+  }
+  return order;
+}
+
+/* ---------- allocation ---------- */
+function runAllocation(st) {
+  var pool = draftPool();
+  var inPool = {}; pool.forEach(function (id) { inPool[id] = 1; });
+  function clean(order) {
+    var out = (order || []).filter(function (id) { return inPool[id]; });
+    pool.slice().sort(byDate).forEach(function (id) { if (out.indexOf(id) === -1) out.push(id); });
+    return dedupe(out);
+  }
+  var bA = clean(st.ballots.takt && st.ballots.takt.order);
+  var bB = clean(st.ballots.conner && st.ballots.conner.order);
+  var nA = 20, nB = pool.length - nA;
+  var order = pickOrder(nA, nB, st.firstPick !== "conner");
+  var avail = {}; pool.forEach(function (id) { avail[id] = 1; });
+  var A = [], B = [], i;
+
+  function countA(fn) { var n = 0; A.forEach(function (id) { if (fn(G[id])) n++; }); return n; }
+
+  for (i = 0; i < order.length; i++) {
+    if (order[i] === "A") {
+      var chosen = null, j;
+      for (j = 0; j < bA.length; j++) {
+        var id = bA[j]; if (!avail[id]) continue;
+        var g = G[id];
+        var exempt = (st.exemptIds || []).indexOf(id) !== -1;
+        if (!exempt && g.wk && countA(function (x) { return x.wk; }) >= st.caps.weekend) continue;
+        if (!exempt && g.tr >= 5 && countA(function (x) { return x.tr >= 5; }) >= st.caps.marquee) continue;
+        chosen = id; break;
+      }
+      if (chosen === null) {
+        for (j = 0; j < bA.length; j++) { if (avail[bA[j]]) { chosen = bA[j]; break; } }
+      }
+      if (chosen === null) break;
+      A.push(chosen); delete avail[chosen];
+    } else {
+      var pick = null;
+      for (var k = 0; k < bB.length; k++) { if (avail[bB[k]]) { pick = bB[k]; break; } }
+      if (pick === null) break;
+      B.push(pick); delete avail[pick];
+    }
+  }
+  return { takt: A, conner: st.protectedIds.concat(B) };
+}
+
+/* ---------- cost ---------- */
+function cost(ids) {
+  var counts = {}; TIERS.forEach(function (t) { counts[t] = 0; });
+  ids.forEach(function (id) { if (G[id]) counts[G[id].tier]++; });
+  var actual = 0, base = 0;
+  TIERS.forEach(function (t) { actual += counts[t] * face(t); base += (QUOTA[t] || 0) * face(t); });
+  var seats = S.seats || 1;
+  var mult = S.priceBasis === "game" ? 1 : seats;
+  return {
+    counts: counts, actual: actual, base: base, diff: actual - base, seats: seats, mult: mult,
+    actualTot: actual * mult, baseTot: base * mult, diffTot: (actual - base) * mult
+  };
+}
+
+/* ---------- transport ---------- */
+async function api(method, patch) {
+  var init = {
+    method: method,
+    headers: { "content-type": "application/json", "x-role": creds.role || "", "x-code": creds.code || "" },
+    cache: "no-store"
+  };
+  if (method === "POST") init.body = JSON.stringify({ version: S.version, patch: patch });
+  var res, data = {};
+  try { res = await fetch("/api/state", init); } catch (e) { return { ok: false, status: 0, data: { error: "Network unreachable." } }; }
+  try { data = await res.json(); } catch (e) {}
+  return { ok: res.ok, status: res.status, data: data };
+}
+
+async function commit(patch, flash) {
+  if (ui.busy) return false;
+  ui.busy = true; render();
+  var r = await api("POST", patch);
+  ui.busy = false;
+  if (r.status === 409 && r.data.state) {
+    S = r.data.state; draft = loadDraft(); render();
+    toast("Someone saved first — loaded their version.", "err");
+    return false;
+  }
+  if (r.status === 401) {
+    signOut("That code is no longer accepted.");
+    return false;
+  }
+  if (!r.ok) { render(); toast(r.data.error || "Could not save.", "err"); return false; }
+  S = r.data.state; draft = loadDraft(); render();
+  if (flash) toast(flash, "ok");
+  return true;
+}
+
+function signOut(msg) {
+  creds = { role: null, code: null };
+  try { localStorage.removeItem("ctd.role"); localStorage.removeItem("ctd.code"); } catch (e) {}
+  ui.role = null; ui.stage = "gate"; ui.authError = msg || "";
+  render();
+}
+
+async function boot() {
+  if (!creds.role || !creds.code) { ui.stage = "gate"; render(); return; }
+  var r = await api("GET");
+  if (r.status === 401) { signOut("That code was not accepted."); return; }
+  if (!r.ok) { ui.stage = "fatal"; ui.fatal = r.data.error || "Could not reach the server."; render(); return; }
+  S = r.data.state; ui.role = creds.role; ui.stage = "app";
+  draft = loadDraft(); render(); startPolling();
+}
+
+var polling = false;
+function startPolling() {
+  if (polling) return; polling = true;
+  setInterval(async function () {
+    if (ui.busy || dragId !== null || document.querySelector(".scrim")) return;
+    var r = await api("GET");
+    if (r.ok && r.data.state && r.data.state.version !== S.version) {
+      S = r.data.state; draft = loadDraft(); render();
+      toast("Updated from the other side.", "ok");
+    }
+  }, 12000);
+}
+
+/* ---------- role ---------- */
+function isOwner() { return ui.role === "conner"; }
+
+/* ================= views ================= */
+
+function mark() {
+  return '<div class="mark">'
+    + '<svg width="30" height="30" viewBox="0 0 32 32" aria-hidden="true">'
+    + '<rect x="2.5" y="5.5" width="27" height="21" rx="6.5" fill="none" stroke="#fff" stroke-width="2"/>'
+    + '<line x1="16" y1="5.5" x2="16" y2="26.5" stroke="#fff" stroke-width="1.6" opacity=".55"/>'
+    + '<circle cx="16" cy="16" r="4" fill="none" stroke="#fff" stroke-width="1.6" opacity=".55"/>'
+    + '<path d="M9 21.5 L12.5 11 L14.6 11 L11.1 21.5 Z" fill="#00A94F"/>'
+    + '<rect x="7" y="21" width="9" height="2.3" rx="1.15" fill="#00A94F"/>'
+    + "</svg>"
+    + '<div><div class="mark-t">Canucks Ticket Draft</div>'
+    + '<div class="mark-s">2026–27 · Rogers Arena</div></div></div>';
+}
+
+function topBarLite() {
+  return '<div class="top"><div class="top-in">' + mark() + '<div class="top-sp"></div></div></div>';
+}
+
+function topBar() {
+  var phaseLabel = { ballots: "Ballots open", review: "Under review", published: "Schedule posted" }[S.phase];
+  var whoLabel = ui.role === "takt" ? TAKT : ui.role === "conner" ? OWNER : "Choose role";
+  return '<div class="top"><div class="top-in">' + mark() + '<div class="top-sp"></div>'
+    + '<div class="phase-pill' + (S.phase === "published" ? " done" : "") + '"><span class="phase-dot"></span>' + phaseLabel + "</div>"
+    + '<button class="who" data-act="switch-role">' + esc(whoLabel)
+    + '<svg width="12" height="12" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 4.5 L6 7.5 L9 4.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>'
+    + "</button></div></div>";
+}
+
+function steps() {
+  var order = ["ballots", "review", "published"];
+  var idx = order.indexOf(S.phase);
+  var names = ["1 · Ballots", "2 · Review", "3 · Schedule"];
+  return '<ul class="steps">' + names.map(function (n, i) {
+    return '<li class="' + (i < idx ? "ok" : i === idx ? "on" : "") + '">' + n + "</li>";
+  }).join("") + "</ul>";
+}
+
+/* ----- role gate ----- */
+function gateView() {
+  if (ui.pendingRole) {
+    var name = ui.pendingRole === "takt" ? TAKT : OWNER;
+    return '<div class="gate"><div class="gate-in" style="max-width:400px">'
+      + '<div class="card"><div class="card-b">'
+      + "<h3>Sign in as " + esc(name) + "</h3>"
+      + '<p class="muted small" style="margin:.5rem 0 1rem">Enter the access code you were given.</p>'
+      + '<div class="field"><label for="ac">Access code</label><input type="password" id="ac" autocomplete="current-password"></div>'
+      + (ui.authError ? '<div class="note warn" style="margin-top:.8rem">' + esc(ui.authError) + "</div>" : "")
+      + '<div class="row" style="margin-top:.9rem"><button class="btn btn-n" data-act="signin"' + (ui.busy ? " disabled" : "") + ">"
+      + (ui.busy ? "Checking\u2026" : "Continue") + '</button>'
+      + '<button class="btn" data-act="back">Back</button></div>'
+      + "</div></div></div></div>";
+  }
+  return '<div class="gate"><div class="gate-in">'
+    + '<p class="eyebrow">Season ticket allocation</p>'
+    + "<h2 style=\"margin:.5rem 0 .7rem\">Who's picking?</h2>"
+    + '<p class="muted small" style="max-width:44ch;margin:0 auto">Rank all 41 open games privately. When both ballots are in, ' + OWNER + " reviews the draft result and posts the final schedule.</p>"
+    + (ui.authError ? '<div class="note warn" style="margin:1.2rem auto 0;max-width:34rem;text-align:left">' + esc(ui.authError) + "</div>" : "")
+    + '<div class="roles">'
+    + '<button class="role" data-act="role" data-role="takt"><div class="role-n">' + TAKT + '</div><div class="role-d">20 games — 8 Regular, 7 Regular+, 3 Premium, 2 Premium+</div></button>'
+    + '<button class="role" data-act="role" data-role="conner"><div class="role-n">' + OWNER + '</div><div class="role-d">22 games — season ticket holder, approves the final allocation</div></button>'
+    + "</div></div></div>";
+}
+
+function loadingView() {
+  return '<div class="gate"><div class="gate-in"><p class="muted">Loading\u2026</p></div></div>';
+}
+function fatalView() {
+  return '<div class="gate"><div class="gate-in" style="max-width:460px">'
+    + '<div class="note warn" style="text-align:left"><strong>Can\u2019t reach the server.</strong><br>' + esc(ui.fatal)
+    + '</div><div class="row" style="margin-top:1rem;justify-content:center"><button class="btn" data-act="retry">Try again</button></div>'
+    + "</div></div>";
+}
+
+/* ----- game row ----- */
+function gameRow(id, mode, rank, total) {
+  var g = G[id];
+  var cls = "gi " + mode + (g.wk ? " wkend" : "") + (mode === "rank" && rank <= 20 && ui.role === "takt" ? " top20" : "");
+  var out = '<li class="' + cls + '" data-id="' + id + '"' + (mode === "rank" ? ' draggable="true"' : "") + ">";
+  if (mode === "rank") {
+    out += '<span class="handle" aria-hidden="true"><svg width="10" height="14" viewBox="0 0 10 14"><g fill="currentColor"><circle cx="2.5" cy="3" r="1.2"/><circle cx="7.5" cy="3" r="1.2"/><circle cx="2.5" cy="7" r="1.2"/><circle cx="7.5" cy="7" r="1.2"/><circle cx="2.5" cy="11" r="1.2"/><circle cx="7.5" cy="11" r="1.2"/></g></svg></span>';
+    out += '<span class="rk">' + rank + "</span>";
+  } else {
+    out += '<span class="handle" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 12 12"><path d="M6 2.5v7M2.5 6h7" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" fill="none"/></svg></span>';
+    out += '<span class="rk"></span>';
+  }
+  out += '<span class="dow">' + g.dow + "</span>";
+  out += '<span class="dt">' + fmtDate(g.d) + "</span>";
+  out += '<span class="opp">' + esc(g.o) + "</span>";
+  out += tierChip(g.tier);
+  if (ui.role === "takt") out += '<span class="dt" style="text-align:right">' + money(face(g.tier)) + "</span>";
+  else out += '<span class="dt" style="text-align:right">' + g.t.replace(":00", "") + "</span>";
+  if (mode === "rank") {
+    out += '<span class="gi-act">'
+      + '<button class="ib" data-act="top" data-id="' + id + '" title="Move to top" aria-label="Move to top"' + (rank === 1 ? " disabled" : "") + '><svg width="12" height="12" viewBox="0 0 12 12"><path d="M6 9.5V3M3 5.5 6 2.5l3 3" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></button>'
+      + '<button class="ib" data-act="up" data-id="' + id + '" title="Up" aria-label="Move up"' + (rank === 1 ? " disabled" : "") + '><svg width="12" height="12" viewBox="0 0 12 12"><path d="M3 7.5 6 4.5l3 3" stroke="currentColor" stroke-width="1.7" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></button>'
+      + '<button class="ib" data-act="down" data-id="' + id + '" title="Down" aria-label="Move down"' + (rank === total ? " disabled" : "") + '><svg width="12" height="12" viewBox="0 0 12 12"><path d="M3 4.5 6 7.5l3-3" stroke="currentColor" stroke-width="1.7" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></button>'
+      + '<button class="ib" data-act="remove" data-id="' + id + '" title="Remove" aria-label="Remove from ranking"><svg width="12" height="12" viewBox="0 0 12 12"><path d="M3 3l6 6M9 3l-6 6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></button>'
+      + "</span>";
+  } else {
+    out += '<span class="gi-act"></span>';
+  }
+  return out + "</li>";
+}
+
+/* ----- cost calculator ----- */
+function calcPanel(ids, opts) {
+  opts = opts || {};
+  var c = cost(ids);
+  var partial = ids.length < 20;
+  var cls = partial ? "zero" : c.diffTot > 0 ? "pos" : c.diffTot < 0 ? "neg" : "zero";
+  var verdict = partial
+    ? "Rank " + (20 - ids.length) + " more game" + (20 - ids.length === 1 ? "" : "s") + " to see where you land."
+    : c.diffTot > 0
+      ? TAKT + " pays " + OWNER + " " + money(c.diffTot)
+      : c.diffTot < 0
+        ? OWNER + " credits " + TAKT + " " + money(Math.abs(c.diffTot))
+        : "Exactly even — nothing changes hands";
+
+  var rows = TIERS.map(function (t) {
+    var q = QUOTA[t] || 0, n = c.counts[t], d = n - q;
+    if (!q && !n) return "";
+    return "<tr><td>" + tierChip(t) + '</td><td class="r">' + q + '</td><td class="r">' + n + "</td>"
+      + '<td class="r" style="color:' + (d > 0 ? "var(--red)" : d < 0 ? "var(--green)" : "var(--ink-3)") + '">' + (d > 0 ? "+" + d : d === 0 ? "—" : d) + "</td>"
+      + '<td class="r">' + money(face(t)) + '</td><td class="r">' + (partial ? "—" : signed((n - q) * face(t) * c.mult)) + "</td></tr>";
+  }).join("");
+
+  return '<div class="calc">'
+    + '<div class="calc-h"><h3>' + esc(opts.title || "Cost vs. your purchased package") + "</h3>"
+    + '<div class="grow"></div><span class="tiny" style="opacity:.8">' + esc(S.seatLabel || (c.seats + " seats")) + " · " + ids.length + " games</span></div>"
+    + '<div class="calc-b">'
+    + '<div class="calc-lead"><div><div class="lbl">Balance</div><div class="big ' + cls + '">' + (partial ? "—" : signed(c.diffTot)) + "</div></div>"
+    + '<div class="small muted" style="padding-bottom:.25rem">' + esc(verdict) + "</div></div>"
+    + '<div class="sums">'
+    + '<div class="sum"><b>' + money(c.baseTot) + "</b><span>Baseline 8/7/3/2</span></div>"
+    + '<div class="sum"><b>' + (partial ? ids.length + " / 20" : money(c.actualTot)) + "</b><span>" + (partial ? "Games ranked" : "These " + ids.length + " games") + "</span></div>"
+    + '<div class="sum"><b>' + (partial ? "—" : signed(c.diffTot)) + "</b><span>Difference</span></div>"
+    + "</div>"
+    + (opts.compact ? "<details><summary>Tier-by-tier breakdown</summary>" : "")
+    + '<div class="tbl-x"><table><thead><tr><th>Tier</th><th class="r">Bought</th><th class="r">Have</th><th class="r">Δ</th><th class="r">Face value</th><th class="r">Effect</th></tr></thead><tbody>'
+    + rows + "</tbody></table></div>"
+    + (opts.compact ? "</details>" : "")
+    + (S.faceConfirmed ? "" : '<div class="note warn" style="margin-top:.9rem;font-size:.82rem"><strong>These face values are estimates.</strong> They are scaled for a lower-bowl seat in Section 116 — not yet taken from the season ticket invoice. Every figure above moves once ' + OWNER + ' enters the real numbers.</div>')
+    + (opts.foot ? '<p class="tiny muted" style="margin-top:.8rem">' + opts.foot + "</p>" : "")
+    + "</div></div>";
+}
+
+/* ----- ballot ----- */
+function ballotView() {
+  var pool = poolIds().filter(function (id) { return draft.indexOf(id) === -1; });
+  if (ui.filter === "wd") pool = pool.filter(function (id) { return !G[id].wk; });
+  if (ui.filter === "we") pool = pool.filter(function (id) { return G[id].wk; });
+  if (ui.filter === "hi") pool = pool.filter(function (id) { return G[id].tr >= 3; });
+  pool.sort(byDate);
+
+  var total = poolIds().length;
+  var done = draft.length;
+  var complete = done === total;
+  var submitted = !!S.ballots[ui.role];
+  var top20 = draft.slice(0, 20);
+
+  var head = '<div class="row" style="margin-bottom:1rem">'
+    + "<div><h2>Your ballot</h2>"
+    + '<p class="muted small" style="margin:.2rem 0 0">Rank all ' + total + " open games, best first. Only your top picks realistically land — but every rank matters if the board thins out.</p></div>"
+    + '<div class="grow"></div>' + steps() + "</div>";
+
+  if (submitted) {
+    head = '<div class="row" style="margin-bottom:1rem"><div><h2>Ballot submitted</h2>'
+      + '<p class="muted small" style="margin:.2rem 0 0">Locked in ' + esc(new Date(S.ballots[ui.role].at).toLocaleString()) + ". You can withdraw it while the other ballot is still out.</p></div>"
+      + '<div class="grow"></div>' + steps() + "</div>";
+  }
+
+  var poolPane = '<div class="card"><div class="pane-h">'
+    + '<div class="pane-t"><h3>Games to rank</h3><span class="count">' + pool.length + " left</span></div>"
+    + '<div class="filters">'
+    + fchip("all", "All") + fchip("wd", "Mon–Thu") + fchip("we", "Fri–Sun") + fchip("hi", "Premium & up")
+    + '<span class="grow"></span>'
+    + '<button class="chipf" data-act="add-shown">Add all shown ↓</button>'
+    + "</div></div>"
+    + '<ul class="list" id="pool" data-empty="Everything is ranked.">'
+    + pool.map(function (id) { return gameRow(id, "pool", 0, 0); }).join("")
+    + "</ul></div>";
+
+  var rankPane = '<div class="card"><div class="pane-h">'
+    + '<div class="pane-t"><h3>Your ranking</h3><span class="count">' + done + " / " + total + "</span></div>"
+    + '<div class="prog"><i style="width:' + Math.round(done / total * 100) + '%"></i></div>'
+    + '<div class="presets">'
+    + '<button class="chipf" data-act="preset" data-p="wd">Start: weekdays first</button>'
+    + '<button class="chipf" data-act="preset" data-p="we">Start: weekends first</button>'
+    + '<button class="chipf" data-act="preset" data-p="tier">Start: best tiers first</button>'
+    + '<button class="chipf" data-act="fill">Fill the rest by date</button>'
+    + '<button class="chipf" data-act="clear">Clear</button>'
+    + "</div></div>"
+    + '<ul class="list" id="rank" data-empty="Nothing ranked yet — use a starting point above, or click games on the left.">'
+    + draft.map(function (id, i) { return gameRow(id, "rank", i + 1, done); }).join("")
+    + "</ul></div>";
+
+  var actions = '<div class="card"><div class="card-b"><div class="row">'
+    + (submitted
+      ? '<button class="btn btn-d" data-act="withdraw"' + (ui.busy ? " disabled" : "") + ">Withdraw ballot</button>"
+        + '<span class="small muted">Withdrawing lets you re-rank and submit again.</span>'
+      : '<button class="btn btn-p btn-lg" data-act="submit"' + (!complete || ui.busy ? " disabled" : "") + ">"
+        + (ui.busy ? "Submitting…" : "Submit ballot") + "</button>"
+        + '<span class="small muted">' + (complete ? "All " + total + " games ranked — ready." : (total - done) + " still unranked. Use “Fill the rest by date” to finish fast.") + "</span>")
+    + '<div class="grow"></div>'
+    + '<span class="tiny muted">Your ranking is saved on this device as you go.</span>'
+    + "</div></div></div>";
+
+  var calc = "";
+  if (ui.role === "takt") {
+    calc = calcPanel(top20, {
+      compact: true,
+      title: "If you got your top 20",
+      foot: "Live estimate from the twenty games at the top of your ranking. The real figure is set once " + OWNER + " approves the allocation — the draft may not give you every one of these."
+    });
+  }
+
+  var ownerBits = isOwner() ? '<div style="margin-bottom:18px">' + settingsCard(false) + '</div>' : "";
+
+  return head + ownerBits
+    + (ui.readonly ? '<div class="note warn" style="margin-bottom:1rem">This view is read-only, so a ballot can\'t be submitted from here. Ask ' + OWNER + " for an editable link.</div>" : "")
+    + (calc ? '<div style="margin-bottom:18px">' + calc + "</div>" : "")
+    + '<div class="ballot">' + poolPane + rankPane + "</div>"
+    + '<div style="margin-top:18px">' + actions + "</div>"
+    + protectedNote();
+}
+
+function fchip(k, label) {
+  return '<button class="chipf" data-act="filter" data-f="' + k + '" aria-pressed="' + (ui.filter === k) + '">' + label + "</button>";
+}
+
+function protectedNote() {
+  var d = (S.disclosedIds || []).filter(function (id) { return G[id]; });
+  if (!d.length) return "";
+  var list = d.map(function (id) { return G[id].dow + " " + fmtDate(G[id].d) + " vs " + G[id].o; }).join(", ");
+  return '<p class="tiny muted" style="margin-top:1rem">' + esc(list) + " is retained by " + OWNER
+    + " and excluded from both ballots. " + TAKT + " picks first in exchange.</p>";
+}
+
+/* ----- waiting ----- */
+function waitView() {
+  var mine = S.ballots[ui.role], theirs = S.ballots[ui.role === "takt" ? "conner" : "takt"];
+  var otherName = ui.role === "takt" ? OWNER : TAKT;
+  return '<div class="narrow" style="margin:0 auto">'
+    + '<div class="row" style="margin-bottom:1rem"><h2>Ballot in</h2><div class="grow"></div>' + steps() + "</div>"
+    + '<div class="card"><div class="card-b">'
+    + '<div class="note good">Your ballot was submitted ' + esc(new Date(mine.at).toLocaleString()) + ".</div>"
+    + '<p class="muted small" style="margin-top:1rem">' + (theirs ? "Both ballots are in. " + OWNER + " is reviewing the draft result." : "Waiting on " + esc(otherName) + "'s ballot. Nothing runs until both are in.") + "</p>"
+    + '<div class="row" style="margin-top:1rem"><button class="btn btn-d btn-s" data-act="withdraw">Withdraw and re-rank</button></div>'
+    + "</div></div>"
+    + (ui.role === "takt" ? '<div style="margin-top:18px">' + calcPanel(S.ballots.takt.order.slice(0, 20), { title: "If you got your top 20", foot: "Provisional — the approved allocation sets the final figure." }) + "</div>" : "")
+    + "</div>";
+}
+
+
+/* ----- owner settings (shared, published) ----- */
+function settingsCard(withRerun) {
+  return '<div class="card"><div class="card-h"><h3>Draft settings</h3>'
+    + '<span class="tiny muted">Only ' + OWNER + ' can change these. ' + TAKT + ' sees the face values while ranking.</span>'
+    + '<div class="grow"></div>'
+    + (withRerun ? '<button class="btn btn-s" data-act="rerun">Re-run allocation</button>' : '')
+    + '</div><div class="card-b">'
+    + '<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:14px">'
+    + numField("cap-weekend", "Weekend cap", S.caps.weekend, 0, 20)
+    + numField("cap-marquee", "Marquee cap", S.caps.marquee, 0, 3)
+    + '<div class="field"><label for="firstPick">First pick</label><select id="firstPick"><option value="takt"' + (S.firstPick !== "conner" ? " selected" : "") + '>' + TAKT + '</option><option value="conner"' + (S.firstPick === "conner" ? " selected" : "") + '>' + OWNER + '</option></select></div>'
+    + '</div>'
+    + '<div style="margin-top:14px"><div class="field"><label for="basis">Prices below are</label><select id="basis" style="max-width:280px"><option value="game"' + (S.priceBasis === "game" ? " selected" : "") + '>Per game — the total for all ' + S.seats + ' seats</option><option value="seat"' + (S.priceBasis === "game" ? "" : " selected") + '>Per seat — multiplied by ' + S.seats + '</option></select></div></div>'
+    + '<div style="margin-top:14px"><div class="field"><label>Face value by tier — as shown on your Canucks account</label></div>'
+    + '<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(112px,1fr));gap:10px;margin-top:.4rem">'
+    + TIERS.map(function (t) {
+        return '<div class="field"><label for="f-' + t + '" style="text-transform:none;letter-spacing:0">' + t + '</label><input type="number" id="f-' + t + '" data-face="' + t + '" value="' + face(t) + '" min="0" step="0.01"></div>';
+      }).join("")
+    + '</div></div>'
+    + (( S.exemptIds || []).length
+        ? '<div class="note good" style="margin-top:14px;font-size:.83rem"><strong>Always draftable by ' + TAKT + ':</strong> '
+          + S.exemptIds.filter(function (id) { return G[id]; }).map(function (id) { return G[id].dow + ' ' + fmtDate(G[id].d) + ' \u00b7 ' + G[id].o; }).join(", ")
+          + ' — neither cap can block ' + (S.exemptIds.length === 1 ? 'it' : 'them') + ' if ranked high enough.</div>'
+        : '')
+    + '<div style="margin-top:16px"><div class="field"><label>Retained games — kept out of ' + TAKT + ' allocation</label></div>'
+    + '<div class="protgrid">' + GAMES.map(function (g) {
+        var on = S.protectedIds.indexOf(g.id) !== -1, lock = isDisclosed(g.id);
+        return '<label class="chk"><input type="checkbox" data-prot="' + g.id + '"' + (on ? " checked" : "") + (lock ? " disabled" : "") + '>'
+          + '<span>' + g.dow + ' ' + fmtDate(g.d) + ' &middot; ' + esc(g.o) + (lock ? ' <em style="opacity:.6">disclosed</em>' : '') + '</span></label>';
+      }).join("") + '</div>'
+    + '<p class="tiny muted" style="margin-top:.45rem">' + TAKT + ' still ranks every one of these. A retained game they rank is passed over and they take their next choice instead. Only the disclosed game is named to them.</p></div>'
+    + '<label class="chk" style="margin-top:12px"><input type="checkbox" id="face-confirmed"' + (S.faceConfirmed ? " checked" : "") + '><span>These are the numbers from my season ticket invoice</span></label>'
+    + '<div class="note" style="margin-top:12px"><div class="row" style="align-items:flex-end">'
+    + '<div class="field" style="max-width:180px"><label for="season-total">Or spread a season total</label><input type="number" id="season-total" placeholder="e.g. 8400" min="0" step="1"></div>'
+    + '<button class="btn btn-s" data-act="spread">Split across 42 games</button>'
+    + '<span class="tiny muted">Fills the six boxes above using the real tier weighting, then edit any of them.</span>'
+    + '</div></div>'
+    + '<div class="note" style="margin-top:14px;font-size:.82rem">Access codes are set as environment variables on the server, not here.</div>'
+    + '<div class="row" style="margin-top:14px"><button class="btn btn-n" data-act="apply-settings"' + (ui.busy ? " disabled" : "") + '>' + (ui.busy ? "Saving\u2026" : "Save settings") + '</button>'
+    + '<span class="tiny muted">Saved for both of you' + (withRerun ? ' — and the allocation re-runs from the two ballots.' : '.') + '</span></div>'
+    + '</div></div>';
+}
+
+/* ----- owner review ----- */
+function reviewView() {
+  var alloc = ui.preview || S.allocation || runAllocation(S);
+  ui.preview = alloc;
+  var c = cost(alloc.takt);
+  var tWk = alloc.takt.filter(function (id) { return G[id].wk; }).length;
+  var ok = alloc.takt.length === 20 && alloc.conner.length === 22;
+
+  var controls = settingsCard(true);
+
+  var summary = '<div class="card"><div class="card-h"><h3>Result</h3><div class="grow"></div>'
+    + '<span class="badge ' + (ok ? "wk" : "prot") + '">' + alloc.takt.length + " / 20 · " + alloc.conner.length + " / 22</span></div>"
+    + '<div class="card-b"><div class="sums">'
+    + '<div class="sum"><b>' + tWk + "</b><span>" + TAKT + " weekend games</span></div>"
+    + '<div class="sum"><b>' + (20 - tWk) + "</b><span>" + TAKT + " weekday games</span></div>"
+    + '<div class="sum"><b>' + signed(c.diffTot) + "</b><span>Settlement</span></div>"
+    + "</div>"
+    + '<p class="small muted" style="margin-top:.9rem">Click any game below to move it to the other side. Counts must read 20 / 22 before you can approve.</p>'
+    + '<p class="tiny muted" style="margin-top:.4rem">Full season ' + money(seasonValue()) + ' · ' + TAKT + ' holds ' + money(cost(alloc.takt).actualTot) + ' · you hold ' + money(seasonValue() - cost(alloc.takt).actualTot) + '</p>'
+    + "</div></div>";
+
+  var ballotsCard = '<div class="card"><div class="card-h"><h3>Submitted ballots</h3><div class="grow"></div>'
+    + '<button class="btn btn-s" data-act="toggle-ballots">' + (ui.showBallots ? "Hide" : "Show both rankings") + "</button></div>"
+    + (ui.showBallots ? '<div class="card-b"><div class="cols2">' + ballotCol("takt", TAKT) + ballotCol("conner", OWNER) + "</div></div>" : "");
+
+  var approve = '<div class="card"><div class="card-b"><div class="row">'
+    + '<button class="btn btn-p btn-lg" data-act="approve"' + (!ok || ui.busy ? " disabled" : "") + ">" + (ui.busy ? "Posting…" : "Approve &amp; post the schedule") + "</button>"
+    + '<button class="btn" data-act="reopen">Reopen ballots</button>'
+    + '<div class="grow"></div><span class="small muted">Posting makes the schedule visible to ' + TAKT + " and locks the ballots.</span>"
+    + "</div></div></div>";
+
+  return '<div class="row" style="margin-bottom:1rem"><div><h2>Review the allocation</h2>'
+    + '<p class="muted small" style="margin:.2rem 0 0">Both ballots are in. Adjust the caps, override any game, then post.</p></div>'
+    + '<div class="grow"></div>' + steps() + "</div>"
+    + '<div class="stack">' + controls + summary
+    + '<div class="cols2">' + sideCard("takt", TAKT, alloc.takt, true) + sideCard("conner", OWNER, alloc.conner, true) + "</div>"
+    + calcPanel(alloc.takt, { title: TAKT + " — cost vs. purchased package", foot: "This is the figure that gets posted when you approve." })
+    + ballotsCard + approve + "</div>";
+}
+
+function numField(id, label, val, min, max) {
+  return '<div class="field"><label for="' + id + '">' + label + '</label><input type="number" id="' + id + '" value="' + val + '" min="' + min + '" max="' + max + '"></div>';
+}
+
+function ballotCol(who, name) {
+  var b = S.ballots[who];
+  if (!b) return "<div><h4>" + name + "</h4><p class=\"small muted\">No ballot.</p></div>";
+  return '<div><h4 style="font-size:.9rem;margin-bottom:.4rem">' + name + '</h4><ol style="margin:0;padding-left:1.4rem;font-size:.82rem;line-height:1.5;max-height:340px;overflow:auto">'
+    + b.order.map(function (id) { return "<li>" + esc(G[id].dow + " " + fmtDate(G[id].d) + " · " + G[id].o) + "</li>"; }).join("")
+    + "</ol></div>";
+}
+
+function sideCard(who, name, ids, movable) {
+  var sorted = ids.slice().sort(byDate);
+  var wk = sorted.filter(function (id) { return G[id].wk; }).length;
+  var body = "", lastMonth = null;
+  sorted.forEach(function (id) {
+    var mk = monthKey(G[id].d);
+    if (mk !== lastMonth) { body += '<li class="mon">' + mk + "</li>"; lastMonth = mk; }
+    var g = G[id];
+    body += '<li class="gi ' + (movable ? "pool" : "") + (g.wk ? " wkend" : "") + '" data-id="' + id + '"' + (movable ? ' data-act="move" data-from="' + who + '"' : "") + ">"
+      + '<span></span><span class="rk"></span><span class="dow">' + g.dow + '</span><span class="dt">' + fmtDate(g.d) + "</span>"
+      + '<span class="opp">' + esc(g.o) + "</span>" + tierChip(g.tier)
+      + '<span class="dt" style="text-align:right">' + g.t.replace(":00", "") + "</span>"
+      + (isDisclosed(id) ? '<span class="badge prot">Held</span>'
+          : (isProtected(id) && isOwner()) ? '<span class="badge res">Reserved</span>'
+          : '<span class="gi-act"></span>')
+      + "</li>";
+  });
+  return '<div class="card"><div class="owner-h ' + who + '"><h3>' + name + "</h3>"
+    + '<span class="count">' + sorted.length + " games</span><div class=\"grow\"></div>"
+    + '<span class="tiny muted">' + (sorted.length - wk) + " weekday · " + wk + " weekend</span></div>"
+    + '<ul class="list" style="max-height:none">' + body + "</ul></div>";
+}
+
+/* ----- handoff: plain-text result the owner can paste to Claude ----- */
+function resultText() {
+  var a = S.allocation, c = cost(a.takt), out = [];
+  out.push("CANUCKS 2026-27 SEASON TICKET SPLIT — APPROVED " + new Date(S.approvedAt).toISOString().slice(0, 10));
+  out.push("Seats: " + (S.seatLabel || ""));
+  out.push("Settlement: " + signed(c.diffTot) + "  (baseline " + money(c.baseTot) + " / actual " + money(c.actualTot) + ")");
+  out.push("");
+  function block(label, ids) {
+    out.push(label + " (" + ids.length + " games):");
+    ids.slice().sort(byDate).forEach(function (id) {
+      var g = G[id];
+      out.push("  " + g.d + "  " + g.dow + "  " + g.t + "  " + g.o + "  [" + g.tier + "]  " + money(face(g.tier))
+        + (isProtected(id) ? "  RETAINED" : ""));
+    });
+    out.push("");
+  }
+  block("TAKT", a.takt);
+  block("CONNER", a.conner);
+  return out.join("\n");
+}
+
+function showCopyBox(text) {
+  var wrap = document.createElement("div");
+  wrap.className = "scrim";
+  wrap.innerHTML = '<div class="modal"><h3>Copy this to Claude</h3>'
+    + '<p class="small muted" style="margin:.4rem 0 .7rem">Select all and copy, then paste it into the chat.</p>'
+    + '<textarea id="copybox" style="width:100%;height:230px;font-family:var(--mono);font-size:.72rem;'
+    + 'background:var(--panel-3);color:var(--ink);border:1px solid var(--rule-2);border-radius:7px;padding:.6rem"></textarea>'
+    + '<div class="row" style="margin-top:.8rem"><button class="btn btn-n" data-act="copy-close">Done</button></div></div>';
+  document.body.appendChild(wrap);
+  var ta = wrap.querySelector("#copybox");
+  ta.value = text; ta.focus(); ta.select();
+  wrap.addEventListener("click", function (e) {
+    if (e.target === wrap || e.target.getAttribute("data-act") === "copy-close") wrap.remove();
+  });
+}
+
+/* ----- published ----- */
+function publishedView() {
+  var a = S.allocation;
+  var mineKey = ui.role === "conner" ? "conner" : "takt";
+  var c = cost(a.takt);
+  var head = '<div class="row" style="margin-bottom:1rem"><div><h2>The 2026–27 schedule</h2>'
+    + '<p class="muted small" style="margin:.2rem 0 0">Approved ' + esc(new Date(S.approvedAt).toLocaleDateString(undefined, { year: "numeric", month: "long", day: "numeric" })) + ". 42 home games, allocated.</p></div>"
+    + '<div class="grow"></div>' + steps() + "</div>";
+
+  var dl = '<div class="row" style="margin-bottom:18px">'
+    + '<button class="btn btn-n" data-act="download" data-who="' + mineKey + '">Download my games</button>'
+    + (isOwner() ? '<button class="btn" data-act="download" data-who="all">Download all 42</button>' : "")
+    + '<button class="btn" data-act="print">Print / Save as PDF</button>'
+    + (isOwner() ? '<button class="btn btn-p" data-act="copy-result">Copy result for Claude</button>' : "")
+    + (isOwner() ? '<div class="grow"></div><button class="btn btn-d btn-s" data-act="reopen">Reopen ballots</button>' : "")
+    + "</div>";
+
+  return head + dl
+    + '<div class="cols2">' + sideCard("takt", TAKT, a.takt, false) + sideCard("conner", OWNER, a.conner, false) + "</div>"
+    + '<div style="margin-top:18px">'
+    + calcPanel(a.takt, { title: TAKT + " — final cost vs. purchased package", foot: "Face values are per seat, multiplied by " + c.seats + " seat" + (c.seats === 1 ? "" : "s") + ". Baseline is the contracted 8 Regular / 7 Regular+ / 3 Premium / 2 Premium+ package." })
+    + "</div>" + protectedNote();
+}
+
+/* ================= render ================= */
+function render() {
+  var body;
+  if (ui.stage === "loading") { root.innerHTML = topBarLite() + "<main>" + loadingView() + "</main>"; return; }
+  if (ui.stage === "fatal") { root.innerHTML = topBarLite() + "<main>" + fatalView() + "</main>"; return; }
+  if (ui.stage === "gate" || !S) { root.innerHTML = topBarLite() + "<main>" + gateView() + "</main>"; return; }
+  if (S.phase === "published") body = publishedView();
+  else if (S.phase === "review") body = isOwner() ? reviewView() : (S.ballots[ui.role] ? waitView() : ballotView());
+  else if (S.ballots[ui.role]) body = waitView();
+  else body = ballotView();
+
+  var scroll = {};
+  ["pool", "rank"].forEach(function (id) { var n = el(id); if (n) scroll[id] = n.scrollTop; });
+  root.innerHTML = topBar() + "<main>" + body + "</main>"
+    + '<footer>Unofficial personal tool for a private season-ticket arrangement. Not affiliated with or endorsed by the Vancouver Canucks or the NHL. Schedule from the NHL club schedule feed; tier assignments from published 2026–27 single-game pricing.</footer>';
+  ["pool", "rank"].forEach(function (id) { var n = el(id); if (n && scroll[id]) n.scrollTop = scroll[id]; });
+}
+
+/* ================= interaction ================= */
+function move(from, to) {
+  if (to < 0 || to >= draft.length) return;
+  var x = draft.splice(from, 1)[0];
+  draft.splice(to, 0, x);
+  saveDraft(); render();
+}
+
+function preset(kind) {
+  var ids = poolIds();
+  var score = {
+    wd: function (g) { return (g.wk ? 1000 : 0) + dayIndex(g); },
+    we: function (g) { return (g.wk ? 0 : 1000) + dayIndex(g); },
+    tier: function (g) { return (10 - g.tr) * 100 + dayIndex(g); }
+  }[kind];
+  draft = ids.slice().sort(function (a, b) {
+    var d = score(G[a]) - score(G[b]);
+    return d !== 0 ? d : byDate(a, b);
+  });
+  saveDraft(); render();
+  toast("Starting order applied — now drag anything you disagree with.");
+}
+function dayIndex(g) { return dparts(g.d).y * 400 + dparts(g.d).m * 32 + dparts(g.d).d; }
+
+document.addEventListener("click", function (e) {
+  var t = e.target.closest("[data-act]"); if (!t) return;
+  var act = t.getAttribute("data-act");
+  var id = +t.getAttribute("data-id");
+
+  if (act === "role") { ui.pendingRole = t.getAttribute("data-role"); ui.authError = ""; render(); return; }
+  if (act === "back") { ui.pendingRole = null; ui.authError = ""; render(); return; }
+  if (act === "retry") { ui.stage = "loading"; render(); boot(); return; }
+  if (act === "signin") {
+    var code = (el("ac") || {}).value || "";
+    if (!code) { ui.authError = "Enter the code."; render(); return; }
+    creds = { role: ui.pendingRole, code: code };
+    ui.busy = true; render();
+    api("GET").then(function (r) {
+      ui.busy = false;
+      if (r.status === 401) { creds = { role: null, code: null }; ui.authError = r.data.error || "That code was not accepted."; render(); return; }
+      if (!r.ok) { ui.stage = "fatal"; ui.fatal = r.data.error || "Server error."; render(); return; }
+      try { localStorage.setItem("ctd.role", creds.role); localStorage.setItem("ctd.code", creds.code); } catch (x) {}
+      S = r.data.state; ui.role = creds.role; ui.pendingRole = null; ui.stage = "app"; ui.authError = "";
+      draft = loadDraft(); render(); startPolling();
+    });
+    return;
+  }
+  if (act === "switch-role") { signOut(""); return; }
+  if (act === "filter") { ui.filter = t.getAttribute("data-f"); render(); return; }
+  if (act === "preset") { preset(t.getAttribute("data-p")); return; }
+  if (act === "fill") {
+    poolIds().slice().sort(byDate).forEach(function (x) { if (draft.indexOf(x) === -1) draft.push(x); });
+    saveDraft(); render(); return;
+  }
+  if (act === "clear") { draft = []; saveDraft(); render(); return; }
+  if (act === "add-shown") {
+    var shown = Array.prototype.slice.call(document.querySelectorAll("#pool .gi")).map(function (n) { return +n.dataset.id; });
+    shown.forEach(function (x) { if (draft.indexOf(x) === -1) draft.push(x); });
+    saveDraft(); render(); return;
+  }
+  if (act === "remove") { var i = draft.indexOf(id); if (i > -1) draft.splice(i, 1); saveDraft(); render(); return; }
+  if (act === "up") { move(draft.indexOf(id), draft.indexOf(id) - 1); return; }
+  if (act === "down") { move(draft.indexOf(id), draft.indexOf(id) + 1); return; }
+  if (act === "top") { move(draft.indexOf(id), 0); return; }
+
+  if (act === "submit") {
+    var entry = { order: draft.slice(), at: new Date().toISOString() };
+    if (ui.role === "takt") { commit({ ballots: { takt: entry } }, "Ballot submitted."); }
+    else {
+      var bs = { takt: S.ballots.takt, conner: entry };
+      commit({ ballots: bs, phase: (bs.takt && bs.conner) ? "review" : "ballots" }, "Ballot submitted.");
+    }
+    return;
+  }
+  if (act === "withdraw") {
+    if (ui.role === "takt") { commit({ ballots: { takt: null } }, "Ballot withdrawn — re-rank whenever you like."); }
+    else {
+      commit({ ballots: { takt: S.ballots.takt, conner: null }, phase: "ballots", allocation: null, approvedAt: null },
+             "Ballot withdrawn — re-rank whenever you like.");
+    }
+    return;
+  }
+  if (act === "toggle-ballots") { ui.showBallots = !ui.showBallots; render(); return; }
+  if (act === "rerun") { ui.preview = runAllocation(S); render(); toast("Allocation re-run from both ballots."); return; }
+  if (act === "spread") {
+    var tot = parseFloat(el("season-total").value);
+    if (!tot || tot <= 0) { toast("Enter the season total for one seat first."); return; }
+    var vals = spreadSeasonTotal(tot);
+    TIERS.forEach(function (tt) { var n = el("f-" + tt); if (n) n.value = vals[tt].toFixed(2); });
+    toast("Split across all 42 games — check the boxes, then Save settings.");
+    return;
+  }
+  if (act === "apply-settings") {
+    var ns = clone(S); delete ns.version;
+    ns.caps.weekend = clampInt(el("cap-weekend").value, 0, 20);
+    ns.caps.marquee = clampInt(el("cap-marquee").value, 0, 3);
+    ns.firstPick = el("firstPick").value;
+    if (el("basis")) ns.priceBasis = el("basis").value;
+    TIERS.forEach(function (tt) { var n = el("f-" + tt); if (n) ns.face[tt] = clampNum(n.value, 0, 100000); });
+    ns.faceConfirmed = !!(el("face-confirmed") && el("face-confirmed").checked);
+    var boxes = document.querySelectorAll("[data-prot]");
+    if (boxes.length) {
+      var keep = [];
+      Array.prototype.forEach.call(boxes, function (b) {
+        var gid = parseInt(b.getAttribute("data-prot"), 10);
+        if (b.checked || isDisclosed(gid)) keep.push(gid);
+      });
+      ns.protectedIds = keep;
+    }
+    delete ns.version;
+    commit(ns, "Settings saved.");
+    return;
+  }
+  if (act === "move") {
+    if (!isOwner() || S.phase !== "review") return;
+    if (isProtected(id)) { toast("That game is protected. Change the protection first."); return; }
+    var from = t.getAttribute("data-from"), to = from === "takt" ? "conner" : "takt";
+    var p = ui.preview;
+    p[from] = p[from].filter(function (x) { return x !== id; });
+    p[to] = p[to].concat([id]);
+    render();
+    return;
+  }
+  if (act === "approve") {
+    commit({
+      allocation: { takt: ui.preview.takt.slice(), conner: ui.preview.conner.slice() },
+      phase: "published", approvedAt: new Date().toISOString()
+    }, "Schedule posted.");
+    return;
+  }
+  if (act === "reopen") {
+    if (!confirm("Reopen ballots? The posted schedule is cleared and both ballots are returned for re-ranking.")) return;
+    commit({ phase: "ballots", allocation: null, approvedAt: null, ballots: { takt: null, conner: null } },
+           "Ballots reopened.");
+    return;
+  }
+  if (act === "download") { doDownload(t.getAttribute("data-who")); return; }
+  if (act === "print") { window.print(); return; }
+  if (act === "copy-result") {
+    var txt = resultText();
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(txt).then(function () {
+        toast("Copied — paste it into the chat with Claude.", "ok");
+      }).catch(function () { showCopyBox(txt); });
+    } else { showCopyBox(txt); }
+    return;
+  }
+});
+
+function clampNum(v, lo, hi) { var n = parseFloat(v); if (isNaN(n)) n = lo; return Math.round(Math.max(lo, Math.min(hi, n)) * 100) / 100; }
+function clampInt(v, lo, hi) { var n = parseInt(v, 10); if (isNaN(n)) n = lo; return Math.max(lo, Math.min(hi, n)); }
+function clone(o) { return JSON.parse(JSON.stringify(o)); }
+
+/* pool click adds to ranking */
+document.addEventListener("click", function (e) {
+  var li = e.target.closest("#pool .gi"); if (!li) return;
+  var id = +li.dataset.id;
+  if (draft.indexOf(id) === -1) draft.push(id);
+  saveDraft(); render();
+});
+
+/* drag to reorder */
+var dragId = null;
+document.addEventListener("dragstart", function (e) {
+  var li = e.target.closest("#rank .gi"); if (!li) return;
+  dragId = +li.dataset.id; li.classList.add("drag");
+  e.dataTransfer.effectAllowed = "move";
+  try { e.dataTransfer.setData("text/plain", String(dragId)); } catch (x) {}
+});
+document.addEventListener("dragover", function (e) {
+  var li = e.target.closest("#rank .gi"); if (!li || dragId === null) return;
+  e.preventDefault();
+  Array.prototype.forEach.call(document.querySelectorAll("#rank .over"), function (n) { n.classList.remove("over"); });
+  li.classList.add("over");
+});
+document.addEventListener("drop", function (e) {
+  var li = e.target.closest("#rank .gi"); if (!li || dragId === null) return;
+  e.preventDefault();
+  var to = draft.indexOf(+li.dataset.id), from = draft.indexOf(dragId);
+  if (from > -1 && to > -1 && from !== to) move(from, to); else render();
+  dragId = null;
+});
+document.addEventListener("dragend", function () { dragId = null; render(); });
+
+/* downloads — a normal browser download, no sandbox capability needed */
+function saveFile(filename, text, mime) {
+  var blob = new Blob([text], { type: mime || "text/plain;charset=utf-8" });
+  var url = URL.createObjectURL(blob);
+  var a = document.createElement("a");
+  a.href = url; a.download = filename; a.style.display = "none";
+  document.body.appendChild(a); a.click(); a.remove();
+  setTimeout(function () { URL.revokeObjectURL(url); }, 2000);
+}
+
+function doDownload(which) {
+  var a = S.allocation || { takt: [], conner: [] };
+  var rows = [["Date", "Day", "Time (PT)", "Opponent", "Tier", "Face value", "Holder"]];
+  var ids = which === "all" ? GAMES.map(function (g) { return g.id; }) : a[which].slice();
+  ids.sort(byDate).forEach(function (id) {
+    var g = G[id];
+    var holder = a.takt.indexOf(id) > -1 ? TAKT : OWNER;
+    rows.push([g.d, g.dow, g.t, g.o, g.tier, face(g.tier).toFixed(2), holder]);
+  });
+  var csv = rows.map(function (r) {
+    return r.map(function (x) { var v = String(x); return /[",\n]/.test(v) ? '"' + v.replace(/"/g, '""') + '"' : v; }).join(",");
+  }).join("\r\n");
+  var base = which === "all" ? "canucks-2026-27-all-games" : "canucks-2026-27-" + (which === "takt" ? "takt" : "conner");
+  saveFile(base + ".csv", "\ufeff" + csv, "text/csv;charset=utf-8");
+  toast("Downloaded.", "ok");
+}
+
+/* ================= boot ================= */
+render();
+boot();
+
+})();
+
+</script>
+</body>
+</html>
